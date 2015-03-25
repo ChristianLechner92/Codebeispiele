@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Al Capone{% endblock %}</title>
+        {% stylesheets output='css/*.css' filter='cssrewrite' 
+            'bundles/devalcapone/css/bootstrap.css'
+            'bundles/devalcapone/css/style.css' %}
+            <link rel="stylesheet" href="{{ asset_url }}" />
+        {% endstylesheets %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+        <!--<h1>Al Capone</h1>
+        <hr>-->
+        
+        {% javascripts '../app/Resources/public/js/*' %}
+            <script type="text/javascript" src="{{ asset_url }}"></script>
+        {% endjavascripts %}
+        <!--<hr>
+        footer:-->
+        
+        
+	<!--header-->
+	<div class="header">
+		<div class="container">
+			<div class="logo">
+				<h1><a href="/home">Al Capone</a></h1>
+			</div>
+			<div class="header-top">
+				
+				<div class="clearfix"> </div>
+			</div>
+			<!---->
+			<div class="header-bottom">
+				<div class="top-nav">
+					<span class="menu"> </span>
+					<ul>
+						<li><a href="/home" >Home</a><label>- </label> </li>
+						<li><a href="/menu" >Menü</a><label>- </label></li>
+						<li><a href="/about">Über uns</a><label>- </label></li>
+					</ul>
+					<!--script-->
+				
+				</div>
+					
+			<div class="clearfix"> </div>
+		</div>
+		<!---->
+	<div class="banner">
+		<div class="banner-in">
+		<!---->
+		<div class="wmuSlider example1">
+			   <div class="wmuSliderWrapper">
+				<article style="position: absolute; width: 100%; opacity: 0;"> 
+				   	<div class="banner-wrap">
+				   	      <h2>Al Capone </h2>
+						  <h5>Restaurant</h5>
+						  <p>Pizzen <span>Nudeln und mehr.</span></p>				   		 
+				   	 </div>
+					 
+			</article>
+			</div>
+		</div>
+		<!---->
+		  <script src="js/jquery.wmuSlider.js"></script> 
+			  <script>
+       			$('.example1').wmuSlider({
+					 pagination : false,
+				});         
+   		     </script> 	
+		<!---->
+	</div>
+	</div>
+		</div>
+	</div>
+	<!---->
+	<div class="content">
+            <div class="container">
+		{% block body %}{% endblock %}
+            </div>
+	</div>
+	<!---->
+	<div class="footer">
+		<div class="container">
+		<div class="col-md-8 footer-bottom ">
+		<h4>Al Capone</h4>
+		<p>Wir sind stehts offen für Neues.</p>
+		<p class="footer-grid">Copyright &copy; 2015 Al Capone Template by  <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
+
+		</div>
+			<div class="clearfix"> </div>
+		</div>	
+	</div>
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+</body>
+        
+        
+</html>
