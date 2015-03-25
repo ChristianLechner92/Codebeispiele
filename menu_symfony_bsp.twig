@@ -1,0 +1,23 @@
+{% extends 'DevAlCaponeBundle::Layout.html.twig' %}
+
+{% block content %}
+    <div class="col-md-8 food-grid">
+        
+        <div class="cup">
+            {% for m in menu %}
+            <div class="col-md-4 cup-in">
+                    <a href="#"><img src="bundles/devalcapone/images/p1.jpg" class="img-responsive" alt=""></a>
+                    <p>{{ m.Title }}</p>
+                    <span class="dollar">{{ m.PreisKl }} € / {{ m.PreisGr }} € </span>
+                    
+                    <div class="clearfix"> </div>
+            </div>
+         
+            {% endfor %}
+        </div>
+        
+    </div>
+   
+{% endblock %}
+
+
