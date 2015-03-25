@@ -1,1 +1,1 @@
-Hier finden Sie einige Klassenbeispiele von mir.
+Hier finden Sie einige Klassenbeispiele / Symfonyspielerein von mir.
